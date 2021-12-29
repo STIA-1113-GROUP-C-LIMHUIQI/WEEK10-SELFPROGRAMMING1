@@ -1,0 +1,31 @@
+package myArray;
+
+public class TestArray2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int stock[] = new int[6];
+		int sum=0;
+		int i;
+		double average;
+		
+		stock[0]=10;
+		stock[1]=20;  
+		stock[2]=70;  
+		stock[3]=40;  
+		stock[4]=50;
+		stock[5]=60;
+		
+		for(i=0; i<stock.length; i++)
+		    sum=sum+stock[i];
+		System.out.println("sum is :" + sum);
+		
+		if(stock.length != 0)
+			average = sum / stock.length;
+		
+		else 
+			average = 0.0;
+		System.out.println(average);
+	}
+
+}
